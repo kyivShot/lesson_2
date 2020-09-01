@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson_2</title>
+</head>
+<body>
+    <!--FORM LESSON-->
+    <form>
+        <input type="text" required> - input type text   <!--Input field with type text, with required atribute-->
+        <br>
+        <input type="password" required> - input type password  <!--Input field with type Password all data which was input will be hided, with required atribute-->
+        <br>
+        <input type="email" required> - input type email   <!--input field with email type (email validation), with required atribute-->
+        <br>
+
+        <select>     <!--Drop down list example-->
+            <option value="superAdmin">Super Admin</option> <!--Use camelCase to define value and STD case for UI-->
+            <option value="admin">Admin</option>  <!--option is required tag for Select!!-->
+            <option value="user">User</option>    
+            <option value="managerLowLevel">Manager low level</option>
+        </select>
+        <br>
+        <h3>Radio list</h3>
+        <input type="radio" name="radio"> radio option 1 <!--radioButton example to make inputs radio should put same name-->
+        <br>
+        <input type="radio" name="radio"> radio option 2
+        <br>
+        <input type="radio" name="radio"> radio option 3
+        <br>
+        <h3>Not radio list</h3>
+        <input type="radio" name="radio2"> Not radio option 1 <!--will not be the radio list-->
+        <br>
+        <input type="radio" name="radio3"> Not radio option 2
+        <br>
+        <input type="radio" name="radio4"> Not radio option 3
+        <br>
+        <h3>Multiselect checkboxes</h3>
+        <label>                                     <!--Makes text clickable and related to object which is in the label-->
+        <input type="checkbox" name="checkbox">    <!--Multiselect list of checkboxes-->
+        <span> Multiselect option 1</span>
+        </label>    
+        <br>
+        <input type="checkbox" name="checkbox">    <!--To make multiselect type in same name for input type checkbox-->
+        <span> Multiselect option 2</span>          <!--Without label text is not clickable-->
+        <br>
+        <input type="checkbox" name="checkbox" id="check">  <!--Added ID to define checkbox-->
+        <label for="check">                                 <!--Searching element by ID and relates to the element-->
+        <span>Multiselect option 3</span>
+        </label>
+        <br>
+        <h3>Text area</h3>
+        <textarea cols="30" rows="10"></textarea>   <!--Text aria to input text situable for comments. Could be prefilled cols and rows is common UI attributes-->
+        <br>
+        <input type="color">    <!--Color picker input-->
+        <br>
+        <h3>Date and time picker</h3>
+        <input type="date" name="" id="">   <!--Input type date - datepicker-->
+        <br>
+        <input type="week" name="" id="">   <!--input type date but used to choose week-->
+        <br>
+        <input type="datetime" name="" id="">
+        <br>
+        <input type="time" name="" id="">   <!--Input type time for time picker-->
+        <br>
+        <h3>Range picker</h3>
+        <input type="range" name="" id="">  <!--Range selector-->
+        <br>
+
+        <br>
+        <br>
+        <button type="submit">Submit</button>   <!--Button to submit form, works only inside of <form></form>, WILL REFRESH PAGE WITH THE FORM SUBMISSION-->
+        <br>
+        <input type="submit" value="AnotherSubmit"> <!--Another way to submit not common-->
+        <br>
+        <button type="reset">Reset</button>     <!--Button to reset-->
+        <button type="button">Nothing</button>  <!--Another type of button to DO NOT submit-->
+    </form>
+    <br>
+    <button type="submit">Submit2</button>      <!--Example of button that will not submit form-->
+    <br>
+    <a href="./task.html">GO TO TASK 1 PAGE</a>
+    <a href="./task_2.html">GO TO TASK 2 PAGE</a>
+</body>
+</html>
